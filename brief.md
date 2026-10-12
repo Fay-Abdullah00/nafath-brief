@@ -30,5 +30,8 @@ A Software Bill of Materials (SBOM) is a structured inventory of software compon
 
 Resource: NTIA - The Minimum Elements for a Software Bill of Materials - https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom
 ## Misconception in My Track
+A common misconception is that installing a Log4j patch alone proves an organization is safe from Log4Shell. Patching is essential, but teams must first find every affected asset, including applications that use Log4j indirectly. They should apply the appropriate update, verify that mitigation worked, and investigate signs of possible exploitation. CISA also recommends maintaining an inventory of vulnerable assets and monitoring them after remediation. A patch is one important control, not a substitute for asset visibility and incident response.
 
+Resource: CISA - Mitigating Log4Shell and Other Log4j-Related Vulnerabilities - https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-356a
 ## Open Question
+How can an organization reliably discover applications that include vulnerable third-party libraries when its software inventory and SBOMs are incomplete?

@@ -17,11 +17,18 @@ The OWASP Mobile Application Security Verification Standard (MASVS) defines secu
 
 Resource: OWASP MASVS - https://mas.owasp.org/MASVS/
 ## Networking
+Border Gateway Protocol (BGP) allows networks to announce routes used to deliver internet traffic. A route hijack occurs when a network incorrectly or maliciously announces routes, potentially redirecting traffic through an unintended network. Resource Public Key Infrastructure (RPKI) supports Route Origin Validation, which checks whether an autonomous system is authorized to originate a route prefix. However, RPKI does not prevent every routing attack, so organizations also need monitoring and broader routing security practices.
 
+Resource: RIPE NCC - RPKI - https://www.ripe.net/manage-ips-and-asns/resource-management/certification/
 ## Cybersecurity
+Log4Shell (CVE-2021-44228) was a critical vulnerability in Apache Log4j, a widely used Java logging library. In affected configurations, an attacker could trigger remote code execution by sending crafted input that Log4j processed. The vulnerability was especially serious because many applications included Log4j indirectly, making affected systems difficult to identify. Organizations should inventory dependencies, update affected Log4j versions, verify remediation, and monitor systems for signs of compromise.
+
+Resource: CISA - Mitigating Log4Shell and Other Log4j-Related Vulnerabilities - https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-356a
 
 ## Data
+A Software Bill of Materials (SBOM) is a structured inventory of software components and their relationships. It helps organizations identify where vulnerable or outdated dependencies are used. NTIA's minimum elements include the supplier name, component name, component version, other unique identifiers, dependency relationships, SBOM author, and timestamp. SBOMs should support automated generation and machine-readable formats. They improve visibility, but do not by themselves prove that software is secure.
 
+Resource: NTIA - The Minimum Elements for a Software Bill of Materials - https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom
 ## Misconception in My Track
 
 ## Open Question
